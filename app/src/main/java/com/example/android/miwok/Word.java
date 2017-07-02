@@ -12,10 +12,20 @@ public class Word {
     //Miwok translation
     private String mMiwokTranslation;
 
+    //image ID
+    private int mImageResourceId;
+
     //Constructor
     public Word(String defaultTranslation, String miwokTranslation) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+    }
+
+    //Second Constructor with 3rd input
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId) {
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+        mImageResourceId = imageResourceId;
     }
 
     //*Get the DefaultTranslation of the word*/
@@ -27,5 +37,11 @@ public class Word {
     public String getmMiwokTranslation() {
         return mMiwokTranslation;
     }
+
+    //* Get the Image ID*/
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
 }
 
